@@ -1,24 +1,290 @@
 * { margin: 0; padding: 0; }
 
-
-.coffe{
-color: rgb(100, 57, 33);
-position: relative;
-left: 550px;
-width: 34px;
-height: 34px;
-font-weight: 900;
-}
-
 .icon{
 position: relative;
-left:80%;
+left:90%;
 position: relative;
-top: -36px;;
+bottom: 40pt;
 width: 34px;
 height: 33px;
 transition: all .25s ease-in-out;
 cursor: pointer;
 }
 
+.xicara{
+  left:49%;
+position: relative;
+bottom: 38pt;
+width: 34px;
+height: 33px;
+transition: all .25s ease-in-out;
+cursor: pointer;
 
+}
+
+.app-container {
+    
+    text-align: -webkit-match-parent;
+    font-size: 20pt;
+    line-height: 3.1rem;
+    font-weight: 300;
+    padding-left: 20%;
+color: rgba(94, 91, 80, 0.837);
+padding-top: 0%;
+}
+  
+  .list {
+    list-style: none;
+    padding: 4%;
+  }
+  
+  .list li {
+    display: inline; 
+    margin-right: 40px; 
+  }
+
+ 
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: -67px;
+  right: 40px;
+  font-size: 1.2rem;
+  color: #864138;
+left: 50px;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+* { margin: 0; padding: 0; }
+body {
+  background: #ededed;
+  padding: 0 20px;
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mynav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mynav a {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
+
+
+
+.carousel {
+  margin-top: 17px;
+  margin-left: 0px;
+  display: flex;
+  gap: .7em;
+  padding: 8px; 
+  
+/* adds scrolling for the element: */
+  overflow-x: scroll;
+/* removes the horizontal scrollbar: */
+  scrollbar-width: none;
+}
+
+ 
+ .ul li{
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  
+  }
+  
+  .mynav li::before{
+  content:"";
+  background-color: rgb(38, 154, 208);
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+}
+
+  
+ .mynav li:hover::before{
+  
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(154, 10, 10);
+  }
+
+ 

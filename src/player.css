@@ -4,6 +4,7 @@ object-fit: cover;
     height: 500px;
     position: relative;
     z-index: -100;
-   
-}    
-    
+    top: -26pt;
+left: 17px;
+
+}
